@@ -7,7 +7,7 @@ disp('Dateset：3Sources')
 
 viewnum=length(X);
 
-opt.maxiter=30;
+opt.maxiter=50;
 
 
 data=X;
