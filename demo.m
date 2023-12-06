@@ -19,10 +19,10 @@ l=[ 3*k];
 num_p=[3]; % num_p is the number of LES
 lambda=[0.001 ]; %this is default
 
+Please ensure that the entered X^v is m*n
 for v=1:viewnum
     data{v}=data{v};
     data{v} = zscore(data{v})';
-    %data{v}=data{v}';
 end
 
 
