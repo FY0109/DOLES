@@ -1,7 +1,7 @@
 clc
 clear all
 warning off
-load("3Sources.mat")
+load("3Sources.mat")%load dataset
 
 disp('Dateset：3Sources')
 
@@ -13,7 +13,7 @@ opt.maxiter=50;
 data=X;
 k=length(unique(Y));
 
-
+% Parameter setting
 d=[ 3*k ];
 l=[ 3*k];
 num_p=[3];
