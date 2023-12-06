@@ -23,15 +23,15 @@ cnt = zeros(num_p,num_view);
 cnt1 = ones(num_p,1);
 P=cell(num_p,1);
 for i=1:num_p
-    Z{i} = eye(i*m,num_sample);
-    P{i} = eye(i*m,d);
+    Z{i} = eye(i*m,num_sample); %Z:pk*n
+    P{i} = eye(i*m,d); %P:pk*d
 end
 
-A=eye(d,l);
-S=zeros(l,num_sample);
+A=eye(d,l); %A:d*l
+S=zeros(l,num_sample); %S:l*n
 S(:,1:l) = eye(l);
-G = eye(l,k);
-F = eye(k,num_sample); 
+G = eye(l,k); %G:l*k
+F = eye(k,num_sample); %F:k*n 
 
 flag = 1;
 iter = 0;
